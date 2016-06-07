@@ -144,6 +144,9 @@ article .body{
 article:first-child{
 	width: 48%;
 }
+article:first-child img{
+	width: 100%;
+}
 article img{
 	height: auto;
 	display: block;
