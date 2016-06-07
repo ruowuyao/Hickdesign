@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 2rem 8%;
+}
+/*@media screen and (min-height: 400px) and (min-width: 1024px)*/
+h2{
+	font-size: 1.3125rem;
+	line-height: 1.2;
+	margin: 0 0 2rem 0;
+}
+.page{
+	max-width: 100%;
+	margin: 0;
+}
+#te{
+	position: fixed;
+	top: 0;
+	left: 80%;
+	background-image: url(images/paulsmith.gif);
+	height: 6px;
+	right: 0;
+	z-index: 10;
+}
+nav,.logo{
+	position: fixed;
+	left: 80%;
+	right: 8%;
+	z-index: 1;
+}
+.logo{	
+	top: 4.5rem;
+	background-image: url(images/hicks_logo.svg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	text-indent: -999rem;
+	height: 2rem;
+	margin-left: -35px;
+}
+nav{
+	top:10rem;
+	padding: 0.3rem 0 0 0;
+	text-align: left;
+}
+nav ul{
+	font-size: 1rem;
+	list-style-type: none;
+	line-height: 1;
+	width: 100%;
+	margin: 0 0 1rem 0;
+}
+nav  li{
+	display: block;
+	margin: 0.75rem 0;
+}
+nav a{
+	margin: 0;
+	padding: 0;
+	display: block;
+	letter-spacing: 0.2rem;
+	font-family: BrandonText-Bold,sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #8787c1;
+}
+#content{
+	margin: 0 22% 0 0;
+	padding: 0 0 0 2rem;
+}
+h1{
+	text-align: left;
+	max-width: 70%;
+	font-size: 2rem;
+	line-height: 1.2;
+	letter-spacing: -0.05rem;
+	color: #666;
+	font-family: BrandonText-Regular, "Gill Sans", "Gill Sans MT", GillSansMT, GillSans, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+h1 strong{
+    color: #e38549;
+    font-weight: 400;
+}
+.icon{
+	float: right;
+	width: 18%;
+}
+.icon img{
+	width: auto;
+	height: 5rem;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	max-width: 100%;
+}
+header{
+	padding: 1rem 0 2rem 0;
+	min-height: 6rem;
+}
+.work:after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+article{
+	display: block;
+	width: 23%;
+	float: left;
+	position:relative;
+	overflow: hidden;
+	margin: 1%;
+	padding: 0;
+	vertical-align: top;
+	transition: width,height 0.2s;
+}
+.work article{
+	border: 0;
+}
+.work article h2{
+	margin: 0;
+	padding-top: 75%;
+}
+.work article h2 a{
+	text-indent: -999rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	padding: 1rem;
+}
+article .body{
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+article:first-child{
+	width: 48%;
+}
+article img{
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	max-width: 100%;
+}
+.clients{
+	padding: 2rem 0;
+	line-height: 1.6;
+}
+.clients .col{
+	max-width: 33%;
+	float: right;
+}
+.clients .col p{
+	margin: 0 0 1rem 0;
+}
+.clients img{
+	display: inline-block;
+	margin: 0.5rem 4%;
+	vertical-align: middle;
+	max-width: 13%;
+}
