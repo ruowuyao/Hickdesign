@@ -19,13 +19,13 @@ h2{
 	position: fixed;
 	top: 0;
 	left: 80%;
-	background-image: url(images/paulsmith.gif);
+	background-image: url(../images/paulsmith.gif);
 	height: 6px;
 	right: 0;
 	z-index: 10;
 }
 .logo{	
-	background-image: url(images/hicks_logo.svg);
+	background-image: url(../images/hicks_logo.svg);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	text-indent: -999rem;
