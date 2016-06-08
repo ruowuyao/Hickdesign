@@ -1,19 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hickdesign by ruowuyao</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" media="screen" />
-    <link rel="stylesheet" href="stylesheets/hick.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body> 
-         <div class="page">
-			<div class="logo">hicks</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>hicksdesign</title>
+		<link rel="stylesheet" type="text/css" href="hick.css"/>
+		<!--<link rel="stylesheet" href="link.css" media="only screen  and (min-width:1024px) and (max-width:1200px)" />-->
+		<link rel="shortcut icon" type="image/x-icon" href="images/icon.png" media="screen" />
+
+        <style type="text/css">
+            @media screen and (min-width:1024px){
+        		nav,.logo{
+					position: fixed;
+					left: 80%;
+					right: 8%;
+					z-index: 1;
+                }
+				.logo{	
+					top: 4.5rem;
+					margin-left: -35px;
+				}
+				nav{
+					top:10rem;
+				}
+        	}
+            @media screen  and (min-width:1024px) and (max-width:1200px){
+        		article,article:first-child{
+	                width: 31%;
+                }
+        	}
+        	@media screen and (max-width:1024px){
+        		article,article:first-child{
+	                width: 48%;
+                }
+                #content{
+        			margin: 0;
+        			padding: 0;
+        		}
+        		.col{
+        			float: none!important;
+        			max-width: 100%!important;
+        		}
+        		.clients img{
+        			max-width: 24%;
+        		}
+        		footer{
+				    position: initial;
+				    bottom: 0.2rem;
+				}
+        	}
+        	@media screen  and (min-width:620px) and (max-width:1024px){
+        		.logo{
+        			float: left;
+        			background-position: 0 0;
+        			width: 30%;
+        		}
+        		nav{
+        			padding: 0.3rem 0 0 0;
+        		}
+        		nav li{
+        			display: inline-block;
+        		}
+        	}
+        	@media screen and (max-width:620px){
+        		.logo{
+        	        background-position: center;
+        		}
+        		nav li{
+        			display: inline-block;
+        		}
+        		nav ul{
+        			text-align: center;
+        		}
+        		.icon{
+        			float: none;
+        			text-align: center;
+        			width: 100%;
+        		}
+        		.icon img{
+        			width:9rem;
+        			height: auto;
+        		}
+        		h1{
+        			max-width: 100%;
+        			text-align: center;
+        		}
+        		
+        	}
+        </style>
+	</head>
+	<body>
+		<div class="page">
+			<h2 class="logo">hicks</h2>
 			<nav>
 				<ul>
 					<li class="n-work"><a href="/">Work</a></li>
@@ -33,7 +111,7 @@
 				</header>
 				<div class="work">
                     <article>
-                    	<h2><a href="">Iconography for Spotify</a></h2>
+                    	<h2><a href="/">Iconography for Spotify</a></h2>
                     	<div class="body">
                     		<p><img src="images/spotify-thumb.png" alt="1" /></p>
                     	</div>
@@ -123,7 +201,7 @@
                     	</div>
                     </article>
 			    </div>
-			    <div class="clients">
+			    <section class="clients">
 			    	<div class="col">
 			    		<p>The creative partnership of <strong>Jon </strong>& <strong>Leigh </strong>Hicks, we have worked for a wide variety of lovely clients. 
 			    			Looking to hire us, or need some more information?</p>
@@ -134,15 +212,12 @@
 			    	<img src="images/Opera-Software_374x148.png" alt="" />
 			    	<img src="images/linotype-logo.png" alt="" />
 			    	<img src="images/MT_Wordmark_web.jpg" alt="" />
-			    </div>				
+			    </section>				
 			</div>
 			<footer>
-				<p></p>
+				<p>chengruomei@qq.com 2016/6/8</p>
 			</footer>
 		</div>
 		<b id="te"></b>
-   
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+	</body>
 </html>

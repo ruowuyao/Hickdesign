@@ -5,7 +5,7 @@
 body{
 	padding: 2rem 8%;
 }
-/*@media screen and (min-height: 400px) and (min-width: 1024px)*/
+/*@media screen and  (min-width: 1200px)*/
 h2{
 	font-size: 1.3125rem;
 	line-height: 1.2;
@@ -24,23 +24,14 @@ h2{
 	right: 0;
 	z-index: 10;
 }
-nav,.logo{
-	position: fixed;
-	left: 80%;
-	right: 8%;
-	z-index: 1;
-}
 .logo{	
-	top: 4.5rem;
 	background-image: url(images/hicks_logo.svg);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	text-indent: -999rem;
 	height: 2rem;
-	margin-left: -35px;
 }
 nav{
-	top:10rem;
 	padding: 0.3rem 0 0 0;
 	text-align: left;
 }
@@ -105,23 +96,14 @@ header{
 	display: block;
 	clear: both;
 }
-article{
-	display: block;
-	width: 23%;
-	float: left;
-	position:relative;
-	overflow: hidden;
-	margin: 1%;
-	padding: 0;
-	vertical-align: top;
-	transition: width,height 0.2s;
-}
 .work article{
 	border: 0;
 }
 .work article h2{
 	margin: 0;
 	padding-top: 75%;
+	font-size: 1rem;
+	text-align: left;
 }
 .work article h2 a{
 	text-indent: -999rem;
@@ -141,22 +123,44 @@ article .body{
 	top: 0;
 	bottom: 0;
 }
+article{
+	display: block;
+	width: 23%;
+	float: left;
+	position:relative;
+	overflow: hidden;
+	margin: 1%;
+	padding: 0;
+	vertical-align: top;
+	transition: width,height 0.2s;
+}
 article:first-child{
 	width: 48%;
 }
+
 article:first-child img{
 	width: 100%;
+	margin: 0;
 }
 article img{
 	height: auto;
 	display: block;
-	margin: 0 auto;
+	margin: 0;
 	border: 0;
 	max-width: 100%;
+}
+p{
+	margin: 0 0 1rem 0;
 }
 .clients{
 	padding: 2rem 0;
 	line-height: 1.6;
+	display: block;
+}
+.clients:after{
+	content: " ";
+	clear: both;
+	display: block;
 }
 .clients .col{
 	max-width: 33%;
@@ -170,4 +174,10 @@ article img{
 	margin: 0.5rem 4%;
 	vertical-align: middle;
 	max-width: 13%;
+}
+footer{
+    position: fixed;
+    left: 80%;
+    right: 0;
+    bottom: 0.2rem;
 }
